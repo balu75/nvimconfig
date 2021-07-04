@@ -39,6 +39,7 @@ set autoread
 set wildignorecase
 set noshowmode
 set signcolumn
+set termguicolors
 
 runtime plug.vim
 runtime map.vim

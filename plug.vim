@@ -26,5 +26,6 @@ Plugin 'maxmellon/vim-jsx-pretty'
 if has("nvim")
   Plugin 'neovim/nvim-lspconfig'
   Plugin 'glepnir/lspsaga.nvim'
+  Plugin 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 endif
 call vundle#end()

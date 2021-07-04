@@ -6,7 +6,6 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'rking/ag.vim'
-Plugin 'kien/ctrlp.vim'
 Plugin 'preservim/vimux'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -23,5 +22,9 @@ if has("nvim")
   Plugin 'glepnir/lspsaga.nvim'
   Plugin 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plugin 'nvim-lua/completion-nvim'
+  Plugin 'nvim-lua/popup.nvim'
+  Plugin 'nvim-lua/plenary.nvim'
+  Plugin 'nvim-telescope/telescope.nvim'
+  Plugin 'kyazdani42/nvim-web-devicons'
 endif
 call vundle#end()

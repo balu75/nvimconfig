@@ -50,8 +50,7 @@ inoremap <C-s> <ESC>:wa<RETURN>
 inoremap <F11> <ESC>:wa<RETURN>:!start vimrun.bat<RETURN>
 
 " Normal Mode
-nmap <Leader>t :NERDTreeFocus<CR>
-nmap <Leader>T :NERDTreeToggle<CR>
+nmap <Leader>T :NERDTreeFocus<CR>
 nmap <Leader>v "+p
 nmap <Leader>w :wa<RETURN>
 nmap <Leader>h :set hls!<RETURN>

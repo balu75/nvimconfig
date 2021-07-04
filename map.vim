@@ -69,7 +69,7 @@ nmap <Leader>ba :b#<RETURN>
 " fugitive
 nmap <Leader>gl :Git pull<RETURN>
 nmap <Leader>gh :Git push<RETURN>
-nmap <Leader>gs :G<CR>
+nmap <Leader>gg :G<CR>
 nmap <Leader>gm :Gvdiffsplit!<CR>
 
 nmap <C-h> <C-w>h

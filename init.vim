@@ -1,6 +1,15 @@
 filetype indent plugin on
 syntax on
 set nocompatible
+set exrc
+set nowrap
+set noswapfile
+set undodir=~/.vim/undodir
+set undofile
+set nohlsearch
+set autoread
+set belloff=all
+set hidden
 set ff=unix
 set belloff=all
 set smartindent
@@ -12,14 +21,13 @@ set encoding=utf-8
 set number relativenumber
 set colorcolumn=100
 set backspace=2
-set scrolloff=5
+set scrolloff=8
 set cursorline
 set ignorecase
 set smartcase
 set incsearch
-set nolist
-set listchars=trail:·,tab:»\ ,eol:$
-set directory=~/.vim/swapfiles//
+set listchars=trail:·,tab:»\
+set list
 set spellfile=~/.vim/spell/de.utf8.add
 set showcmd
 set path+=**
@@ -29,8 +37,9 @@ set splitbelow
 set autowrite
 set autoread
 set wildignorecase
+set noshowmode
+set signcolumn
 
 runtime plug.vim
 runtime map.vim
 runtime autocmd.vim
-

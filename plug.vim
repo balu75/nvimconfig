@@ -7,14 +7,11 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'rking/ag.vim'
 Plugin 'preservim/vimux'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'mattn/emmet-vim'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'morhetz/gruvbox'
 Plugin 'christoomey/vim-tmux-navigator'
 
 if has("nvim")
@@ -26,5 +23,7 @@ if has("nvim")
   Plugin 'nvim-lua/plenary.nvim'
   Plugin 'nvim-telescope/telescope.nvim'
   Plugin 'kyazdani42/nvim-web-devicons'
+  Plugin 'eddyekofo94/gruvbox-flat.nvim'
+  Plugin 'hoob3rt/lualine.nvim'
 endif
 call vundle#end()

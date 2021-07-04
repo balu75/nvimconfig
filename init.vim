@@ -1,6 +1,5 @@
 filetype indent plugin on
 syntax on
-set completeopt=noinsert,menuone,noselect
 set nocompatible
 set ff=unix
 set belloff=all

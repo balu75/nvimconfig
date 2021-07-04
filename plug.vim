@@ -4,7 +4,6 @@ let g:airline_powerline_fonts=1
 set rtp+=$HOME/.vim/bundle/Vundle.vim
  
 call vundle#begin()
-Plugin 'nvim-lua/completion-nvim'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'rking/ag.vim'
 Plugin 'kien/ctrlp.vim'
@@ -18,14 +17,11 @@ Plugin 'mattn/emmet-vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'morhetz/gruvbox'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'epilande/vim-react-snippets'
-Plugin 'maxmellon/vim-jsx-pretty'
 
 if has("nvim")
   Plugin 'neovim/nvim-lspconfig'
   Plugin 'glepnir/lspsaga.nvim'
   Plugin 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  Plugin 'nvim-lua/completion-nvim'
 endif
 call vundle#end()

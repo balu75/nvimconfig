@@ -40,6 +40,7 @@ set wildignorecase
 set noshowmode
 set signcolumn
 set termguicolors
+set timeoutlen=1000
 
 runtime plug.vim
 runtime map.vim

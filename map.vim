@@ -1,8 +1,9 @@
-let mapleader=" "
+" mappings
 
-inoremap jj <ESC>
+let mapleader=","
+
 inoremap <C-s> <ESC>:wa<RETURN>
-inoremap <F11> <ESC>:wa<RETURN>:!start vimrun.bat<RETURN>
+noremap <C-s> :wa<RETURN>
 
 nmap <Leader>t :NERDTreeFocus<CR>
 nmap <Leader>T :NERDTreeToggle<CR>
@@ -32,27 +33,23 @@ nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 nmap <F4> :cn<CR>zz
 nmap <silent> <S-F4> :cp<CR> <bar> zz
-nnoremap <silent> vv <C-w>v
-map <Leader>vp :VimuxPromptCommand<CR>
-map <Leader>vl :VimuxRunLastCommand<CR>
-map <Leader>vi :VimuxInspectRunner<CR>
-map <Leader>vz :VimuxZoomRunner<CR>
+nmap <silent> vv <C-w>v
+nmap <Leader>vp :VimuxPromptCommand<CR>
+nmap <Leader>vl :VimuxRunLastCommand<CR>
+nmap <Leader>vi :VimuxInspectRunner<CR>
+nmap <Leader>vz :VimuxZoomRunner<CR>
+nmap <Leader>vx :VimuxInterruptRunner<CR>
+nmap <Leader>vc :VimuxClearTerminalScreen<CR>
 
 " Visual Mode
 vnoremap <Leader>c "+y
 
-map <leader>vm :vsp ~/.vimrc<CR>
-map <leader>vs :source ~/.vimrc<CR>
-
-" Insert Mode
-inoremap jj <ESC>
-inoremap <C-s> <ESC>:wa<RETURN>
-inoremap <F11> <ESC>:wa<RETURN>:!start vimrun.bat<RETURN>
+nmap <leader>vm :vsp ~/.vimrc<CR>
+nmap <leader>vs :source ~/.vimrc<CR>
 
 " Normal Mode
 nmap <Leader>T :NERDTreeFocus<CR>
 nmap <Leader>v "+p
-nmap <Leader>w :wa<RETURN>
 nmap <Leader>h :set hls!<RETURN>
 nmap <Leader>p "+p
 nmap <Leader>rp :CtrlPClearCache<RETURN>
@@ -72,20 +69,8 @@ nmap <Leader>gh :Git push<RETURN>
 nmap <Leader>gg :G<CR>
 nmap <Leader>gm :Gvdiffsplit!<CR>
 
-nmap <C-h> <C-w>h
-nmap <C-j> <C-w>j
-nmap <C-k> <C-w>k
-nmap <C-l> <C-w>l
-nmap <F4> :cn<CR>zz
-nmap <silent> <S-F4> :cp<CR> <bar> zz
-nnoremap <silent> vv <C-w>v
-map <Leader>vp :VimuxPromptCommand<CR>
-map <Leader>vl :VimuxRunLastCommand<CR>
-map <Leader>vi :VimuxInspectRunner<CR>
-map <Leader>vz :VimuxZoomRunner<CR>
-
 " Visual Mode
 vnoremap <Leader>c "+y
 
-map <leader>vm :vsp ~/.vimrc<CR>
-map <leader>vs :source ~/.vimrc<CR>
+nmap <leader>vm :vsp ~/.vimrc<CR>
+nmap <leader>vs :source ~/.vimrc<CR>

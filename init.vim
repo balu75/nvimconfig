@@ -38,7 +38,7 @@ set autowrite
 set autoread
 set wildignorecase
 set noshowmode
-set signcolumn
+set signcolumn=yes
 set termguicolors
 set timeoutlen=1000
 

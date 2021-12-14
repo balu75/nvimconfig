@@ -69,4 +69,7 @@ require'lspconfig'.cssls.setup {
   on_attach = on_attach,
 }
 
+require'lspconfig'.solargraph.setup{
+}
+
 EOF

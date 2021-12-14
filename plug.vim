@@ -15,7 +15,6 @@ Plugin 'christoomey/vim-tmux-navigator'
 
 if has("nvim")
   Plugin 'neovim/nvim-lspconfig'
-  Plugin 'glepnir/lspsaga.nvim'
   Plugin 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plugin 'nvim-lua/completion-nvim'
   Plugin 'nvim-lua/popup.nvim'
@@ -24,5 +23,6 @@ if has("nvim")
   Plugin 'kyazdani42/nvim-web-devicons'
   Plugin 'eddyekofo94/gruvbox-flat.nvim'
   Plugin 'hoob3rt/lualine.nvim'
+  Plugin 'kosayoda/nvim-lightbulb'
 endif
 call vundle#end()

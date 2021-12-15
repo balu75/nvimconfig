@@ -1,6 +1,6 @@
 " mappings
 
-let mapleader=","
+let mapleader=" "
 
 inoremap <C-s> <ESC>:wa<RETURN>
 noremap <C-s> :wa<RETURN>
@@ -42,7 +42,9 @@ nmap <Leader>vx :VimuxInterruptRunner<CR>
 nmap <Leader>vc :VimuxClearTerminalScreen<CR>
 
 " Visual Mode
-vnoremap <Leader>c "+y
+vn <Leader>y "+y
+vn <Leader>d "+d
+nn <Leader>p "+p
 
 nmap <leader>vm :vsp ~/.vimrc<CR>
 nmap <leader>vs :source ~/.vimrc<CR>
@@ -51,7 +53,6 @@ nmap <leader>vs :source ~/.vimrc<CR>
 nmap <Leader>T :NERDTreeFocus<CR>
 nmap <Leader>v "+p
 nmap <Leader>h :set hls!<RETURN>
-nmap <Leader>p "+p
 nmap <Leader>rp :CtrlPClearCache<RETURN>
 nmap <Leader>l :set list<RETURN>
 nmap <Leader>L :set nolist<RETURN>
@@ -68,9 +69,6 @@ nmap <Leader>gl :Git pull<RETURN>
 nmap <Leader>gh :Git push<RETURN>
 nmap <Leader>gg :G<CR>
 nmap <Leader>gm :Gvdiffsplit!<CR>
-
-" Visual Mode
-vnoremap <Leader>c "+y
 
 nmap <leader>vm :vsp ~/.vimrc<CR>
 nmap <leader>vs :source ~/.vimrc<CR>

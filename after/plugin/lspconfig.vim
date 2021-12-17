@@ -31,6 +31,8 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
   buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 
+  buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
+
   if client.resolved_capabilities.document_formatting then
     vim.api.nvim_command [[augroup Format]]
     vim.api.nvim_command [[autocmd! * <bubber>]]
@@ -70,15 +72,14 @@ local on_attach = function(client, bufnr)
   } 
 end
 
-nvim_lsp.tsserver.setup {
-  on_attach = on_attach,
-  filetypes = { 'typescript', 'typescriptreact', 'typescript.tsx' }
-}
-
-
 --Enable (broadcasting) snippet capability for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+nvim_lsp.tsserver.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+}
 
 require'lspconfig'.cssls.setup {
   capabilities = capabilities,
@@ -86,6 +87,8 @@ require'lspconfig'.cssls.setup {
 }
 
 require'lspconfig'.solargraph.setup{
+  capabilities = capabilities,
+  on_attach = on_attach,
 }
 
 EOF

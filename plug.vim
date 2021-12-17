@@ -5,19 +5,16 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
  
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
-Plugin 'rking/ag.vim'
 Plugin 'preservim/vimux'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'mattn/emmet-vim'
 Plugin 'christoomey/vim-tmux-navigator'
 
 if has("nvim")
   Plugin 'neovim/nvim-lspconfig'
   Plugin 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plugin 'nvim-lua/completion-nvim'
-  Plugin 'nvim-lua/popup.nvim'
+  "Plugin 'nvim-lua/popup.nvim'
   Plugin 'nvim-lua/plenary.nvim'
   Plugin 'nvim-telescope/telescope.nvim'
   Plugin 'kyazdani42/nvim-web-devicons'

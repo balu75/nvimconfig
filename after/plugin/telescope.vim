@@ -5,7 +5,7 @@ nnoremap <silent> <Leader>tr <cmd>Telescope live_grep<cr>
 nnoremap <silent> <Leader>tb <cmd>Telescope buffers<cr>
 nnoremap <silent> <Leader>th <cmd>Telescope help_tags<cr>
 nnoremap <silent> <Leader>tw <cmd>Telescope grep_string<cr>
-nnoremap <silent> <Leader>tfb <cmd>Telescope file_browser<cr>
+nnoremap <silent> <Leader>tx <cmd>Telescope file_browser<cr>
 
 
 lua << EOF

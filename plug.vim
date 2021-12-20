@@ -17,6 +17,8 @@ if has("nvim")
   Plugin 'nvim-telescope/telescope.nvim'
   Plugin 'kyazdani42/nvim-web-devicons'
   Plugin 'eddyekofo94/gruvbox-flat.nvim'
+  Plugin 'sainnhe/gruvbox-material'
+
   Plugin 'hoob3rt/lualine.nvim'
   Plugin 'SirVer/ultisnips'
 

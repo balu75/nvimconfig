@@ -6,7 +6,6 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'preservim/vimux'
-Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'christoomey/vim-tmux-navigator'
 
@@ -21,6 +20,7 @@ if has("nvim")
 
   Plugin 'hoob3rt/lualine.nvim'
   Plugin 'SirVer/ultisnips'
+  Plugin 'honza/vim-snippets'
 
   " nvim-cmp start
   Plugin 'hrsh7th/cmp-nvim-lsp'

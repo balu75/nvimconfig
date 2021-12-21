@@ -1,6 +1,7 @@
 " mappings
 
 let mapleader=" "
+inoremap jj <ESC>
 
 inoremap <C-s> <ESC>:wa<RETURN>
 noremap <C-s> :wa<RETURN>
